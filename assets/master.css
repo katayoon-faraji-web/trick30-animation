@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  overflow: hidden;
+}
+body > main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: cursive;
+}
+body > main > span {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 7.5%;
+  height: 12.5%;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+body > main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-size: cover;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+body > main > div > h2 {
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+  animation-name: h2;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+body > main > div:nth-of-type(1) {
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(img/1.jpg);
+  animation-name: div1;
+  animation-delay: 2.1s;
+}
+body > main > div:nth-of-type(1) > h2 {
+  animation-delay: 3.2s;
+}
+body > main > div:nth-of-type(2) {
+  width: 0;
+  height: 50%;
+  top: 0;
+  left: 0;
+  background-image: url(img/2.webp);
+  animation-name: div2;
+  animation-delay: 1.8s;
+}
+body > main > div:nth-of-type(2) > h2 {
+  animation-delay: 2.8s;
+}
+body > main > div:nth-of-type(3) {
+  width: 20%;
+  height: 0;
+  bottom: 0;
+  left: 30%;
+  background-image: url(img/3.webp);
+  animation-name: div3;
+  animation-delay: 1.2s;
+}
+body > main > div:nth-of-type(3) > h2 {
+  animation-delay: 2s;
+}
+body > main > div:nth-of-type(4) {
+  height: 25%;
+  width: 0;
+  top: 50%;
+  left: 0;
+  background-image: url(img/4.jpeg);
+  animation-name: div4;
+  animation-delay: 1.5s;
+}
+body > main > div:nth-of-type(4) > h2 {
+  animation-delay: 2.4s;
+}
+body > main > div:nth-of-type(5) {
+  height: 12.5%;
+  width: 0;
+  bottom: 12.5%;
+  left: 0;
+  background-image: url(img/5.jpg);
+  animation-name: div5;
+  animation-delay: 0.6s;
+}
+body > main > div:nth-of-type(5) > h2 {
+  animation-delay: 1.2s;
+}
+body > main > div:nth-of-type(7) {
+  width: 7.5%;
+  bottom: 0;
+  height: 0;
+  left: 7.5%;
+  background-image: url(img/7.jpg);
+  animation-name: div7;
+  animation-delay: 0.3s;
+}
+body > main > div:nth-of-type(7) > h2 {
+  font-size: 15px;
+  animation-delay: 0.8s;
+}
+body > main > div:nth-of-type(8) {
+  height: 12.5%;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  animation-name: div8;
+}
+body > main > div:nth-of-type(8) > h2 {
+  font-size: 15px;
+  animation-delay: 0.4s;
+}
+body > main > div:nth-of-type(6) {
+  width: 15%;
+  height: 0;
+  bottom: 0;
+  left: 15%;
+  background-image: url(img/6.jpg);
+  animation-name: div6;
+  animation-delay: 0.9s;
+}
+body > main > div:nth-of-type(6) > h2 {
+  animation-delay: 1.6s;
+}
+
+@keyframes div8 {
+  to {
+    width: 7.5%;
+  }
+}
+@keyframes div7 {
+  to {
+    height: 12.5%;
+  }
+}
+@keyframes div5 {
+  to {
+    width: 15%;
+  }
+}
+@keyframes div6 {
+  to {
+    height: 25%;
+  }
+}
+@keyframes div4 {
+  to {
+    width: 30%;
+  }
+}
+@keyframes div3 {
+  to {
+    height: 50%;
+  }
+}
+@keyframes div2 {
+  to {
+    width: 50%;
+  }
+}
+@keyframes div1 {
+  to {
+    height: 100%;
+  }
+}
+@keyframes h2 {
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,213 @@
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    overflow: hidden;
+    >main{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        font-family: cursive;
+        >span{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 7.5%;
+            height: 12.5%;
+            color: black;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1;
+           
+            
+           
+        }
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-size: cover;
+            animation-duration: .3s;
+            animation-timing-function: linear;
+            animation-fill-mode:forwards ;
+            >h2{
+                color: white;
+                font-size: 30px;
+                opacity: 0;
+                animation-name: h2;
+                animation-duration: .4s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+                
+
+            }
+            &:nth-of-type(1){
+                width: 50%;
+                // height: 100%;
+                height: 0;
+                bottom: 0;
+                right: 0;
+                background-image: url(img/1.jpg);
+                animation-name: div1;
+                animation-delay: 2.1s;
+                >h2{
+                    animation-delay: 3.2s;
+                }
+                
+            }
+            &:nth-of-type(2){
+                // width: 50%;
+                width: 0;
+                height:50%;
+                top: 0;
+                left: 0;
+                background-image: url(img/2.webp);
+                animation-name: div2;
+                animation-delay: 1.8s;
+                >h2{
+                    animation-delay:2.8s;
+                }
+            }
+            &:nth-of-type(3){
+                width: 20%;
+                // height:50%;
+                height: 0;
+                bottom:0;
+                left: 30%;
+                background-image: url(img/3.webp);
+                animation-name: div3;
+                animation-delay:1.2s;
+                >h2{
+                    animation-delay:2s;
+                }
+
+            }
+            &:nth-of-type(4){
+                // width: 30%;
+                height:25%;
+                width: 0;
+                top: 50%;
+                left: 0;
+                background-image: url(img/4.jpeg);
+                animation-name: div4;
+                animation-delay: 1.5s;
+                >h2{
+                    animation-delay:2.4s;
+                }
+            }
+            &:nth-of-type(5){
+                height:12.5%;
+                width: 0;
+                bottom: 12.5%;
+                left: 0;
+                background-image: url(img/5.jpg);
+                animation-name: div5;
+                animation-delay: .6s;
+                >h2{
+                    animation-delay: 1.2s;
+                }
+                
+            }
+            &:nth-of-type(7){
+                width: 7.5%;
+                // height:12.5%;
+                bottom: 0;
+                height: 0;
+                left: 7.5%;
+                background-image: url(img/7.jpg);
+                animation-name: div7;
+                animation-delay: .3s;
+                >h2{
+                    font-size: 15px;
+                    animation-delay: .8s;
+                }
+
+            }&:nth-of-type(8){
+                // width: 7.5%;
+                height:12.5%;
+                width: 0;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                animation-name: div8;
+                >h2{
+                    font-size: 15px;
+                    animation-delay: .4s;
+                }   
+
+            }
+            &:nth-of-type(6){
+                width: 15%;
+                // height:25%;
+                height: 0;
+                bottom: 0;
+                left: 15%;
+                background-image: url(img/6.jpg);
+                animation-name: div6;
+                animation-delay: .9s;
+                >h2{
+                    animation-delay: 1.6s;
+                }
+
+            }
+        }
+
+    }
+}
+@keyframes div8 {
+    to{
+        width:7.5% ;
+    }
+    
+}
+@keyframes div7 {
+    to{
+        height: 12.5%;
+    }
+    
+}
+@keyframes div5 {
+    to{
+        width: 15%;
+    }
+    
+}
+@keyframes div6 {
+    to{
+        height: 25%;
+    }    
+}
+@keyframes div4 {
+    to{
+        width: 30%;
+    }    
+}
+@keyframes div3 {
+    to{
+        height: 50%;
+    }    
+}
+@keyframes div2 {
+    to{
+        width: 50%;
+    }    
+}
+@keyframes div1 {
+    to{
+        height: 100%;
+    }    
+}
+@keyframes h2 {
+    to{
+        opacity: 1;
+    }
+    
+}
